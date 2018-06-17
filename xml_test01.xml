@@ -7,7 +7,7 @@
         <Task id="__NORMAL4" type="normal"></Task>
     </Block>
      <Block id="__BLOCK2">
-        <Malti id="__MALUTI1">
+        <Multi id="__MULTI1">
             <Thread id="__THREAD1">
                 <Task id="__NORMAL5" type="normal"></Task>
                 <Task id="__NORMAL6" type="normal"></Task>
@@ -15,7 +15,7 @@
             <Thread id="THREAD2">
                 <Task id="__NORMAL7" type="normal"></Task>
             </Thread>
-        </Malti>
+        </Multi>
     </Block>
     <Block id="__BLOCK3">
         <Task id="__NORMAL8" type="normal"></Task>
