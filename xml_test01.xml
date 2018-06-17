@@ -1,4 +1,4 @@
-<Workflow>
+<Workflow id="__WORKFLOW1">
     <Block id="__BLOCK1">
         <Task id="__START1" type="start"></Task>
         <Task id="__NORMAL1" type="normal"></Task>

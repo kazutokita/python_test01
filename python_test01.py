@@ -1,22 +1,24 @@
 import xml.sax
 import xml.sax.handler
-import sys
+
+stack = []
 
 class Handler(xml.sax.handler.ContentHandler):
 	def startElement(self, name, attrs):
-		print "Start: " + name
+		stack.append(attrs["id"])
+		print("Start: " + name + " / id: " + attrs["id"] + "_START")
 
 	def endElement(self, name):
-		print "End: " + name
+		print("End: " + name + " / id: " + stack.pop() + "_END")
 	
-	def characters(self, content):
-		print "character:" + content
-		return
+	# def characters(self, content):
+	# 	print("character:" + content)
+	# 	return
 
 def main():
 	parser = xml.sax.make_parser()
 	parser.setContentHandler(Handler())
-	parser.parse(sys.stdin)
+	parser.parse("xml_test01.xml")
 	return
 	
 if __name__=="__main__":
